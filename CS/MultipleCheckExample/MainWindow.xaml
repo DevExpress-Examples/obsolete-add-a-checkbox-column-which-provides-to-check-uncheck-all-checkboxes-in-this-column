@@ -1,0 +1,50 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+        x:Class="MultipleCheckExample.MainWindow"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        xmlns:local="clr-namespace:MultipleCheckExample"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        Title="MainWindow"
+        Width="550"
+        Height="400">
+    <Window.DataContext>
+        <local:TaskViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="24"/>
+        </Grid.RowDefinitions>
+        <dxg:GridControl x:Name="grid"
+                         ItemsSource="{Binding List}"
+                         Grid.ColumnSpan="2">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="Name"/>
+                <dxg:GridColumn FieldName="Date"/>
+                <dxg:GridColumn FieldName="IsCompleted"
+                                local:CheckMultipleBehavior.ShowHeaderCheckBox="true" />
+                <dxg:GridColumn FieldName="IsReviewed"
+                                local:CheckMultipleBehavior.ShowHeaderCheckBox="true" />
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView>
+                    <dxmvvm:Interaction.Behaviors>
+                        <local:CheckMultipleBehavior/>
+                    </dxmvvm:Interaction.Behaviors>
+                </dxg:TableView>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+        <Button Content="Add new item"
+                Grid.Row="1"
+                Click="Button_Click" />
+        <Button Content="Delete selected item"
+                Grid.Row="1"
+                Grid.Column="1"
+                Click="Button_Click_1" />
+    </Grid>
+</Window>
