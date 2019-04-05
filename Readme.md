@@ -3,7 +3,7 @@
 
 * [CheckMultipleBehavior.cs](./CS/MultipleCheckExample/Behavior/CheckMultipleBehavior.cs) (VB: [CheckMultipleBehavior.vb](./VB/MultipleCheckExample/Behavior/CheckMultipleBehavior.vb))
 * **[MainWindow.xaml](./CS/MultipleCheckExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MultipleCheckExample/MainWindow.xaml))**
-* [MainWindow.xaml.cs](./CS/MultipleCheckExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/MultipleCheckExample/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/MultipleCheckExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MultipleCheckExample/MainWindow.xaml.vb))
 * [Task.cs](./CS/MultipleCheckExample/Model/Task.cs) (VB: [Task.vb](./VB/MultipleCheckExample/Model/Task.vb))
 * [TaskViewModel.cs](./CS/MultipleCheckExample/ViewModel/TaskViewModel.cs) (VB: [TaskViewModel.vb](./VB/MultipleCheckExample/ViewModel/TaskViewModel.vb))
 <!-- default file list end -->
