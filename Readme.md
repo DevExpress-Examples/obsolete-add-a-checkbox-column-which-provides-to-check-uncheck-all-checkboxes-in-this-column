@@ -1,3 +1,3 @@
-⛔ DEPRECATED. DEPRECATED. This example was deprecated.
+⛔ DEPRECATED. This example was deprecated.
 
 The current approach will not be updated in the future.
